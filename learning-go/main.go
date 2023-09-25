@@ -1,9 +1,22 @@
 package main
 
-import "fmt"
-import "log"
+import (
+	"fmt"
+	"log"
+	"time"
+)
+
+type User struct {
+	FirstName   string
+	LastName    string
+	PhoneNumber string
+	Age         int
+	BirthDate   time.Time
+}
 
 func main() {
+
+	/// Basic
 	fmt.Println("Hello, World.")
 
 	var whatToSay string
@@ -29,6 +42,14 @@ func main() {
 	changeUsingPointer(&myString)
 	log.Println("after func call myString is set to", myString)
 
+	/// Struct
+	user := User{
+		FirstName:   "Trevor",
+		LastName:    "Sawler",
+		PhoneNumber: "1 555-555-1212",
+	}
+
+	log.Println(user.FirstName, user.LastName, "Birthdate", user.BirthDate, user.PhoneNumber)
 }
 
 func saySomething() (string, string) {
