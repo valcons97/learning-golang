@@ -1,20 +1,14 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-
-	/// Basic
-	fmt.Println("Hello, World.")
+	fmt.Println("Hello, world.")
 
 	var whatToSay string
-
 	var i int
 
 	whatToSay = "Goodbye, cruel world"
-
 	fmt.Println(whatToSay)
 
 	i = 7
@@ -22,8 +16,8 @@ func main() {
 	fmt.Println("i is set to", i)
 
 	whatWasSaid, theOtherThingThatWasSaid := saySomething()
-	fmt.Println("The function returned", whatWasSaid, theOtherThingThatWasSaid)
 
+	fmt.Println("The function returned", whatWasSaid, theOtherThingThatWasSaid)
 }
 
 func saySomething() (string, string) {
