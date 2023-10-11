@@ -1,3 +1,6 @@
 go 1.20
 
-use ./learning-go
+use (
+	./learning-go
+	./learning-go-test
+)
