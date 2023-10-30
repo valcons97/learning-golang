@@ -1,6 +1,7 @@
 go 1.20
 
 use (
+	./hello-world
 	./learning-go
 	./learning-go-test
 )
